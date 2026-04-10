@@ -3,6 +3,7 @@ import './Sign.css'
 import Nav from '../Nav/Nav'
 import Axios from '../../FetchDataCard/axios.jsx'
 import { useNavigate } from 'react-router-dom';
+import logo from './beautiful-bright-pop-landscapes.jpg'
 
 function SignUp() {
 
@@ -121,7 +122,7 @@ function SignUp() {
                 </div>
 
                 <div className="divImg">
-                    <img src='src/Pages/signUp/beautiful-bright-pop-landscapes.jpg'></img>
+                    <img src={logo}></img>
                     <div id='paraDiv'>
                         <p className='para'>Fly to the <b className='purple'>unknowns</b></p>
                     </div>

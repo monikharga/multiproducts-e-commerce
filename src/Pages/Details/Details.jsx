@@ -47,7 +47,7 @@ const Details = (props) => {
                     discount={product.discountPercentage}
                     price={product.price}
                     rating={product.rating}
-                    review={product.reviews``}
+                    review={product.reviews}
                     />
                 ):(
                     <p/>
