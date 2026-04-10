@@ -1,0 +1,83 @@
+.detailImage img{
+    height: 50px;
+    width: 50px;
+}
+
+.Img img{
+    height: 400px;
+    width: 400px;
+}
+
+
+.Div{
+    padding: 40px;
+}
+
+.detailImage{
+    padding:8px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    max-width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(146, 145, 145);
+}
+
+.divDivider{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.Img{
+    /* border: 1px solid; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 3px 0px rgb(165, 163, 163);
+    border-radius: 8px;
+}
+
+
+
+.CartDiv{
+    display: flex;
+    justify-content: space-between ;
+    margin: 30px 5px;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.CartDiv button{
+    padding: 7px 50px;
+    font-size: large;
+     border-radius: 5px;
+}
+
+.CartDiv button:first-of-type{
+   color: purple;
+    /* margin-right: px; */
+    border-color: purple;
+    /* align-items: center; */
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    /* padding: ; */
+}
+
+.CartDiv button:last-of-type{
+    margin-left: 5px;
+    background-color: purple;
+    color: white;
+    border: none;
+   padding-left: 68px;
+   padding-right: 68px;
+}
+
+.CartDiv img{
+    height: 33px;
+    width: 35px;
+   filter: invert(10%) sepia(90%) saturate(500%) hue-rotate(260deg);
+  
+}
+
+
+    

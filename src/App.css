@@ -1,0 +1,77 @@
+.image {
+    height: 200px;
+
+
+}
+
+.imgCon {
+    background-color: white;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0% 0% 0% 8%;
+    /* border: 2px solid red; */
+}
+
+.para {
+    font-size: 1rem;
+    font: bold;
+    font-family: sans-serif;
+    color: rgb(49, 49, 49);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.paraCon {
+    width: 200px;
+    margin: 0% 0% 0% 4%;
+}
+
+.container {
+    /* margin-left: 50px; */
+    background-color: white;
+    width: 250px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    padding: 10px 0px 10px 0px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 2px solid rgb(226, 225, 225);
+    box-shadow: 0px 0px 5px 0px rgb(245, 245, 245);
+    margin-top: 20px;
+
+
+}
+
+.container:hover {
+    transform: scale(1.02);
+    z-index: 10;
+
+}
+
+.price {
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: bolder;
+    margin: 0px 0px 0px 8px;
+}
+
+.cardCon {
+    /* padding: 25px; */
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+     /* margin-top: 150px; */
+     padding-top: 100px;
+     padding-left: 20px;
+     padding-right: 20px;
+
+}
+
