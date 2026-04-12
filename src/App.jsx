@@ -20,7 +20,7 @@ function App() {
    function Provider() {
     return (
       <>
-        {/* <Nav /> */}
+        <Nav />
         <Service />
       </>
     )
@@ -28,7 +28,7 @@ function App() {
      function AdminPage() {
     return (
       <>
-        {/* <Nav /> */}
+        <Nav />
         <Admin/>
       </>
     )

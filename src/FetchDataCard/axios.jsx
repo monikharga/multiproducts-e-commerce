@@ -40,7 +40,9 @@ function Axioss() {
                                     title={curEle.title}
                                     img={curEle.images}
                                     price={curEle.price}
+                                    discount={curEle.discountPercentage}
                                     rating={curEle.rating}
+                                    reviews={curEle.reviews}
                                 />
 
                             

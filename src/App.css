@@ -1,49 +1,62 @@
 .image {
     height: 200px;
-
-
 }
 
 .imgCon {
     background-color: white;
-    width: 200px;
     border-radius: 20px;
-    margin: 0% 0% 0% 8%;
-    /* border: 2px solid red; */
+    /* align-items: center; */
+    text-align: center;
 }
 
-.para {
-    font-size: 1rem;
-    font: bold;
-    font-family: sans-serif;
+
+.para1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
     color: rgb(49, 49, 49);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    text-align: left;
+   
 }
 
-.paraCon {
-    width: 200px;
+.paraCon ,.priCon {
+    padding: 0px 18px 18px 5px;
+    /* width: max-content; */
     margin: 0% 0% 0% 4%;
+    text-align: center;
 }
 
+.priCon{
+    display: flex;
+    gap: 8px;
+    text-overflow: ellipsis;
+}
+
+.tag{
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.tag1{
+    text-decoration: line-through;
+    color: gray;
+    /* font-size: 13px; */
+}
+   
+.tag2{
+    color: rgb(7, 155, 7);
+    /* font-size: 13px; */
+}
 .container {
-    /* margin-left: 50px; */
     background-color: white;
-    width: 250px;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
-    padding: 10px 0px 10px 0px;
-    margin: 10px;
     border-radius: 8px;
     transition: transform 0.3s ease;
     border: 2px solid rgb(226, 225, 225);
     box-shadow: 0px 0px 5px 0px rgb(245, 245, 245);
     margin-top: 20px;
-
-
 }
 
 .container:hover {
@@ -53,25 +66,63 @@
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 22px;
     text-align: left;
-    font-weight: bolder;
-    margin: 0px 0px 0px 8px;
+    font-weight:600;
+    line-height: 32px;
+    /* font-style:normal ; */
+    /* margin: 0px 0px 0px 8px; */
 }
+
 
 .cardCon {
-    /* padding: 25px; */
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    width: 100%;
-     /* margin-top: 150px; */
-     padding-top: 100px;
-     padding-left: 20px;
-     padding-right: 20px;
-
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
+.RevRat{
+    display: flex;
+align-items: center;
+/* text-overflow: ellipsis; */
+}
+
+.rating{
+    padding: 6px 8px;
+    border-radius: 100px;
+    text-align: center;
+}
+.rating p{
+    color: white;
+    background-color: rgba(47, 3, 178, 0.832);
+   font-size: 12px;
+}
+
+.review {
+   font-size: 12px;
+  
+}
+
+@media screen and (max-width:500px) {
+    .cardCon{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container{
+        width: 210px;
+    }
+}
+@media screen and (max-width:375px) {
+    .cardCon{
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .container{
+        width: 180px;
+    }
+}
