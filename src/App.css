@@ -88,6 +88,7 @@
 .RevRat{
     display: flex;
 align-items: center;
+margin-bottom: 30px;
 /* text-overflow: ellipsis; */
 }
 
