@@ -12,44 +12,48 @@
 
 .para1 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     color: rgb(49, 49, 49);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     text-align: left;
-   
+
 }
 
-.paraCon ,.priCon {
+.paraCon,
+.priCon {
+    /* border: 1px solid red; */
     padding: 0px 18px 18px 5px;
     /* width: max-content; */
     margin: 0% 0% 0% 4%;
     text-align: center;
 }
 
-.priCon{
+.priCon {
     display: flex;
     gap: 8px;
     text-overflow: ellipsis;
 }
 
-.tag{
+.tag {
     margin-top: 6px;
     font-weight: 600;
     font-size: 13px;
 }
-.tag1{
+
+.tag1 {
     text-decoration: line-through;
     color: gray;
     /* font-size: 13px; */
 }
-   
-.tag2{
+
+.tag2 {
     color: rgb(7, 155, 7);
     /* font-size: 13px; */
 }
+
 .container {
     background-color: white;
     border-radius: 8px;
@@ -68,7 +72,7 @@
 .price {
     font-size: 22px;
     text-align: left;
-    font-weight:600;
+    font-weight: 600;
     line-height: 32px;
     /* font-style:normal ; */
     /* margin: 0px 0px 0px 8px; */
@@ -85,45 +89,52 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
-.RevRat{
+.RevRat {
     display: flex;
-align-items: center;
-margin-bottom: 30px;
-/* text-overflow: ellipsis; */
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    /* border: 1px solid red; */
+    /* padding: 0px 5px; */
+    /* text-overflow: ellipsis; */
 }
 
-.rating{
+.rating {
     padding: 6px 8px;
     border-radius: 100px;
     text-align: center;
 }
-.rating p{
+
+.rating p {
     color: white;
     background-color: rgba(47, 3, 178, 0.832);
-   font-size: 12px;
+    font-size: 12px;
 }
 
 .review {
-   font-size: 12px;
-  
+    font-size: 12px;
+
 }
 
 @media screen and (max-width:500px) {
-    .cardCon{
-        grid-template-columns: repeat(2,1fr);
+    .cardCon {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .container{
+
+    .container {
         width: 210px;
     }
 }
+
 @media screen and (max-width:375px) {
-    .cardCon{
-        grid-template-columns: repeat(2,1fr);
+    .cardCon {
+        grid-template-columns: repeat(2, 1fr);
         padding-left: 10px;
         padding-right: 10px;
         gap: 10px;
     }
-    .container{
+
+    .container {
         width: 180px;
     }
 }

@@ -120,8 +120,7 @@
 
     }
 
-    #link.active {
-       
+    #link.active { 
         display: flex !important;
         position: absolute;
         padding: 0px;

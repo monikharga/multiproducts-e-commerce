@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { data, useParams } from "react-router-dom";
 import MataData from './mataData'
 import OtherDetails from "./OtherDetails";
+import ProdDet from './Prodetails'
 
 const Details = (props) => {
 
@@ -22,10 +23,11 @@ const Details = (props) => {
 
     useEffect(() => {
         fetchData()
-        console.log(product);
-        
-    }, [])
 
+
+    }, [])
+    console.log(product);
+    // console.log(product.id)
     return (
         <>
             {product ? (
@@ -40,20 +42,37 @@ const Details = (props) => {
             )}
 
             {
-                product?(
-                    <OtherDetails
-                    id={product.id}
-                    title={product.title}
-                    discount={product.discountPercentage}
-                    price={product.price}
-                    rating={product.rating}
-                    review={product.reviews}
-                    />
-                ):(
-                    <p/>
+                product ? (
+                    <>
+                        <OtherDetails
+                            id={product.id}
+                            desc={product.description}
+                            title={product.title}
+                            discount={product.discountPercentage}
+                            price={product.price}
+                            rating={product.rating}
+                            reviews={product.reviews}
+                        />
+                        {/* <p>{product.id}</p> */}
+                    </>
+                    // {}
+                ) : (
+                    <p>nothing ...</p>
                 )
             }
+            {
+
+
+                product ? (
+                    (<ProdDet
+                        desc={product.description}
+                        dim={product.dimensions}
+                    />)
+                ) :
+                    (<p>error</p>)
+            }
         </>
+
     )
 }
 

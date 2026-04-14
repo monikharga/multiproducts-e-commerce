@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './mataData.css'
 import { useNavigate } from 'react-router-dom'
 import CartImg from './Cart1.png'
+import Box from '../../FetchDataCard/Box'
 const MataData = (props) => {
     const Nevigate = useNavigate()
 
@@ -19,7 +20,7 @@ const MataData = (props) => {
                     <div className='detailsDivImg'>
                         {props.image?.length >= 0 && (
                             props.image.map((e, i) => {
-                                console.log("image", image);
+                               
                                 return (
                                     <div
                                         key={i}
@@ -34,21 +35,18 @@ const MataData = (props) => {
                             <img src={img} />
                         </div>
                         <div className='CartDiv'>
-                          
-                            <button>Add to Cart 
+
+                            <button>Add to Cart
                                 <img src={CartImg} alt='img' ></img>
                             </button>
-                            
-                                <button>Buy Now</button>
+
+                            <button>Buy Now</button>
                         </div>
                     </div>
 
                 </div>
                 <hr />
-                <div>
-                    <p>Count of Similar product</p>
-
-                </div>
+               
             </div>
 
         </>

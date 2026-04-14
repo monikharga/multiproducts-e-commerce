@@ -10,7 +10,7 @@
 
 
 .Div{
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
 }
 
 .detailImage{
@@ -79,5 +79,54 @@
   
 }
 
+.boxDiv{
+    /* border: 1px solid red; */
+    padding: 15px 10px 5px 5px ;
+    text-align: left;
+    box-shadow: 0px 0px 2px 0px rgb(172, 169, 169);
+    margin:0px 18px ;
+    border-radius: 10px;
+}
 
-    
+.boxDiv .RevRat{
+    margin-left: 23px;
+    margin-bottom: 10px;
+}
+
+.boxDiv .para1{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.boxDiv .h{
+    font-size: 15px ;
+    padding: 8px 0px 0px 0px;
+    font-weight: 100;
+} 
+
+.boxDiv .paraCon{
+    text-align: left;
+}
+
+.boxP{
+    margin-top: 23px;
+    padding: 20px 20px 20px 30px;
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+
+.ProH1{
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.proD{
+    font-size: 17px ;
+    font-weight: 600;
+    margin: 8px 0px ;
+}
+
+.ProUl{
+   list-style-type: none;
+   font-size: 15px;
+}
