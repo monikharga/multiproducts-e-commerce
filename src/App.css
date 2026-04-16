@@ -118,23 +118,23 @@
 
 @media screen and (max-width:500px) {
     .cardCon {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
 
-    .container {
+    /* .container {
         width: 210px;
-    }
+    } */
 }
 
 @media screen and (max-width:375px) {
     .cardCon {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         padding-left: 10px;
         padding-right: 10px;
         gap: 10px;
     }
 
-    .container {
+    /* .container {
         width: 180px;
-    }
+    } */
 }
