@@ -6,7 +6,7 @@ const Box = (props) => {
         <>
             <div className="paraCon">
                 <h1 className="para1">{title}</h1>
-                {/* {desc && <p className="h">{desc}</p>} */}
+                {/* {desc && <p className="h">{d``esc}</p>} */}
             </div>
             <div className="priCon">
                 <p className="price">&#8377;{Math.round((price * 80) - (((price * 80) * discount) / 100))}</p>
