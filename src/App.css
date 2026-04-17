@@ -117,6 +117,9 @@
     font-size: 12px;
 
 }
+.col{
+    color: rgb(212, 1, 1);
+}
 
 @media screen and (max-width:500px) {
     .cardCon {

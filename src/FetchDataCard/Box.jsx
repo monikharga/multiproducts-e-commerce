@@ -1,6 +1,6 @@
 const Box = (props) => {
-    const { title, price, discount, rating, reviews, desc } = props
-    // console.log("idd :", title);
+    const { title, price, discount, rating, reviews, stock } = props
+   
 
     return (
         <>
@@ -12,7 +12,11 @@ const Box = (props) => {
                 <p className="price">&#8377;{Math.round((price * 80) - (((price * 80) * discount) / 100))}</p>
                 <p className="tag1 tag">&#8377;{Math.round(price * 80)}</p>
                 <p className="tag2 tag">{discount}% off</p>
+                {
+                    stock === "In Stock" ? <p></p> : <p className="tag col">{stock}</p>
+                }
             </div>
+
 
             <div className="RevRat">
                 <div className="rating">

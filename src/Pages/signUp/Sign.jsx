@@ -16,7 +16,7 @@ function SignUp() {
 
         let valid = true; //add
         // alert('ok')
-        console.log(e.value);
+       
         e.preventDefault()
 
         if (!regPass.test(details.password)) {
@@ -44,7 +44,7 @@ function SignUp() {
             }
 
         }
-        console.log(errorPass, details);
+       
 
     }
 

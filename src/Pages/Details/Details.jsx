@@ -3,7 +3,8 @@ import { data, useParams } from "react-router-dom";
 import MataData from './mataData'
 import OtherDetails from "./OtherDetails";
 import ProdDet from './Prodetails'
-
+import Rating from './Rating'
+import Reviews from './Reviews'
 const Details = (props) => {
 
     const { id } = useParams();
@@ -61,8 +62,6 @@ const Details = (props) => {
                 )
             }
             {
-
-
                 product ? (
                     (<ProdDet
                         desc={product.description}
@@ -71,6 +70,18 @@ const Details = (props) => {
                 ) :
                     (<p>error</p>)
             }
+            {
+                product ? (
+                    < Rating 
+                    rating={product.rating}
+                    reviewsl={product.reviews.length}
+                    reviews={product.reviews}
+                    />
+                ) :(
+                    <p>error ...</p>
+                )
+            }
+
         </>
 
     )

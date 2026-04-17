@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Box from "./Box"
 const Card = (props) => {
     const nevigate = useNavigate();
+    
+    
     return (
         <>
 
@@ -17,6 +19,7 @@ const Card = (props) => {
                     discount={props.discount}
                     rating={props.rating}
                     reviews={props.reviews}
+                    stock={props.stock}
                 />
             </div>
 

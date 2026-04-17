@@ -11,11 +11,12 @@ function Axioss() {
     const fetchApi = async () => {
         try {
             let data = await GetDetails()
-            console.log(data.data);
+           
             setFetchData(data.data.products)
             console.log("data : ", fetcData);
 
-
+        
+            
         } catch (error) {
             console.log(error);
 
@@ -26,6 +27,7 @@ function Axioss() {
         fetchApi()
     }, [])
 
+    // console.log("stock : ",fetcData.availabilityStatus);
     
     return (
         <>
@@ -43,6 +45,7 @@ function Axioss() {
                                     discount={curEle.discountPercentage}
                                     rating={curEle.rating}
                                     reviews={curEle.reviews}
+                                    stock={curEle.availabilityStatus}
                                 />
 
                             

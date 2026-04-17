@@ -1,7 +1,7 @@
 import Box from '../../FetchDataCard/Box'
 const OtherDetails = (props) => {
    const { id,desc, title, price, discount, rating, reviews } = props
-   // console.log("id : ", rating);
+   
 
    return (
       <>

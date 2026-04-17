@@ -1,7 +1,7 @@
 const Prodetails=(props)=>{
 const {desc}=props
 const {width,height ,depth}=props.dim
-// console.log("dim : ",w);
+
 return(
     <>
     <div className="boxDiv boxP">

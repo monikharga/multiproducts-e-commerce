@@ -19,7 +19,7 @@ const Nav = () => {
             setmenu(true)
         
     }
-    console.log(menuu)
+    
     return (
         <>
             <div className='NavBar'>
