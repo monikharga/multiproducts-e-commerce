@@ -13,8 +13,7 @@ function Axioss() {
             let data = await GetDetails()
            
             setFetchData(data.data.products)
-            console.log("data : ", fetcData);
-
+          
         
             
         } catch (error) {
@@ -27,7 +26,6 @@ function Axioss() {
         fetchApi()
     }, [])
 
-    // console.log("stock : ",fetcData.availabilityStatus);
     
     return (
         <>

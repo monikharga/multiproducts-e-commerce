@@ -27,9 +27,7 @@ const Details = (props) => {
 
 
     }, [])
-    console.log(product);
-    // console.log(product.id)
-    return (
+     return (
         <>
             {product ? (
                 <MataData
@@ -73,6 +71,7 @@ const Details = (props) => {
             {
                 product ? (
                     < Rating 
+                    id={product.id}
                     rating={product.rating}
                     reviewsl={product.reviews.length}
                     reviews={product.reviews}

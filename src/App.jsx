@@ -7,6 +7,7 @@ import SignUp from './Pages/signUp/Sign'
 import Service from './Pages/ServiceProvider/ServiceProvider'
 import Admin from './Pages/Admin/Admin'
 import Details from './Pages/Details/Details'
+import AllReview from './Pages/Details/AllReview'
 function App() {
 
   function Landing() {
@@ -43,6 +44,7 @@ function App() {
         <Route path='/Provider' element={<Provider/>}/>
         <Route path='/Admin' element={<AdminPage/>}/>
         <Route path='/Details/:id' element={<Details/>}/>
+       <Route path='/AllReview/:id' element={<AllReview/>}/>
       </Routes>
     </BrowserRouter>
 

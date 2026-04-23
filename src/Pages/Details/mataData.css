@@ -95,7 +95,7 @@
 
 .boxDiv .para1{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .boxDiv .h{
@@ -116,34 +116,111 @@
 }
 
 .ProH1{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
    
 }
 .proD{
-    font-size: 17px ;
+    font-size: 15px ;
     font-weight: 600;
     margin: 8px 0px ;
 }
 
 .ProUl{
    list-style-type: none;
-   font-size: 15px;
+   font-size: 13px;
 }
 
 .Rating{
     margin-bottom: 35px;
+    justify-content: space-between;
 }
 hr{
     margin-bottom: 20px;
+    
 }
 
 .r{
-   padding: 2px 15px;
-   font-size: 13px !important;
+   padding: 0px 14px;
+   font-size: 12px !important;
   
 }
 
 .R{
     margin-left: 0px !important;
+    left: -50px;
+}
+
+.RatDat .rating{
+   margin: 0px;
+   background-color: rgb(96, 7, 240);
+  color: white;
+}
+
+.name{
+    font-size: 16px;
+
+}
+.RatDat{
+    gap: 20px;
+    align-items: center;
+    /* text-align: center; */
+}
+.date{
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+.divReview{
+    line-height: 35px;
+    
+}
+
+hr{
+    margin-top: 20px;
+}
+.revBtn{
+    padding: 8px 12px;
+    font-size: 18px;
+   border: none;
+   background-color: white;
+    color: purple;
+    font-weight: 600;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.space{
+    margin:15px 25px 0px ;
+    justify-content: space-between;
+    align-items: center;
+}
+.space p{
+    font-size: 20px;
+    color: rgb(82, 80, 80);
+} 
+
+.space h2{
+    font-size: 22px;
+    color: rgb(82, 80, 80);
+    cursor: pointer;
+}
+
+.hr{
+    width: 100%;
+}
+.divR{
+    margin: 25px;
+}
+.rate{
+    font-size: 40px;
+    color: green;
+    font-weight: 600;
+    
+}
+
+.boxDiv .P{
+    font-size: var(--first-font-size);
+    font-weight: 600;
+    padding-bottom: 30px;
 }
