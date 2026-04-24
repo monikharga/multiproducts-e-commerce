@@ -4,8 +4,8 @@
 }
 
 .Img img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 
@@ -25,13 +25,13 @@
 .divDivider{
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    gap: 20px;
 }
 
 .Img{
     /* border: 1px solid; */
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0px 0px 3px 0px rgb(165, 163, 163);
     border-radius: 8px;
 }

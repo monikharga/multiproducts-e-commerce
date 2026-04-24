@@ -17,7 +17,7 @@ const MataData = (props) => {
         <>
             <div className='Div'>
                 <div className='divDivider'>
-                    <div className='detailsDivImg'>
+                    <div>
                         {props.image?.length >= 0 && (
                             props.image.map((e, i) => {
                                
